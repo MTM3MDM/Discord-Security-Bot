@@ -108,12 +108,12 @@ class AdvancedSecurityBot:
             logger.info("🚀 보안봇 시스템 초기화 중...")
             
             # AI 판사 시스템 초기화
-            await initialize_ai_judge(GEMINI_API_KEY)
+            initialize_ai_judge(GEMINI_API_KEY)
             self.ai_judge = get_ai_judge()
             logger.info("✅ AI 판사 시스템 초기화 완료")
             
             # 자연어 처리 시스템 초기화
-            await initialize_natural_language_system(GEMINI_API_KEY)
+            initialize_natural_language_system(GEMINI_API_KEY)
             self.natural_language_system = get_natural_language_system()
             logger.info("✅ 자연어 처리 시스템 초기화 완료")
             
