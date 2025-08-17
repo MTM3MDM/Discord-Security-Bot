@@ -113,7 +113,7 @@ class AdvancedSecurityBot:
             logger.info("✅ AI 판사 시스템 초기화 완료")
             
             # 자연어 처리 시스템 초기화
-            initialize_natural_language_system(GEMINI_API_KEY)
+            initialize_natural_language_system(GEMINI_API_KEY, self, advanced_user_manager, self.ai_judge)
             self.natural_language_system = get_natural_language_system()
             logger.info("✅ 자연어 처리 시스템 초기화 완료")
             
